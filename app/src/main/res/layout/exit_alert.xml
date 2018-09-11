@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/squarecamera__white">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout">
+
+        <RelativeLayout
+            android:id="@+id/header_rel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_gradient">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="Quick Print"
+                android:textColor="@color/squarecamera__white"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_rel"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Do you like Quick Print ? Would you give your rating and help us make the app even better?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:id="@+id/button_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient"
+                android:text="Exit"
+                android:textColor="@color/squarecamera__white"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gradient"
+                android:text="Rate"
+                android:textColor="@color/squarecamera__white"
+                android:textSize="20sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.srk.quickprint.Activity.FlipRotateActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_flip"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_weight="0"
+        android:background="@drawable/bg_gradient">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:textColor="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/ic_back" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/bgPanel"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg_gradient" />
+
+    <ImageView
+        android:id="@+id/btnLeft"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/bgPanel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_rotate_left" />
+
+    <ImageView
+        android:id="@+id/btnRight"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLeft"
+        app:layout_constraintStart_toEndOf="@+id/btnLeft"
+        app:srcCompat="@drawable/btn_rotate_right" />
+
+    <ImageView
+        android:id="@+id/btnFlipH"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRight"
+        app:layout_constraintStart_toEndOf="@+id/btnRight"
+        app:srcCompat="@drawable/btn_horizontal_flip" />
+
+    <ImageView
+        android:id="@+id/btnFlipV"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFlipH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFlipH"
+        app:srcCompat="@drawable/btn_vertical_flip" />
+
+    <ImageView
+        android:id="@+id/btnDone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_flip"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_flip"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_flip"
+        app:srcCompat="@drawable/ic_checkmark"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bgPanel"
+        android:layout_below="@id/toolbar_flip"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <ImageView
+            android:id="@+id/imgMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="119dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

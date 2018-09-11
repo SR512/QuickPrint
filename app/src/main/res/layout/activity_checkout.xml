@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/squarecamera__white"
+        >
+
+        <include layout="@layout/app_bar"
+            android:id="@+id/checkout_appbar"></include>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/checkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PLACE ORDER"
+                android:padding="10dp"
+                android:background="@drawable/bg_gradient"
+                android:textColor="@color/squarecamera__white"
+                android:layout_alignParentBottom="true"/>
+
+        </android.support.v7.widget.ButtonBarLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:id="@+id/textView"
+            android:layout_below="@+id/checkout_appbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dp" />
+
+        <EditText
+            android:id="@+id/c_mobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:hint="Enter Mobile"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Enter Your Addresh"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="36dp"
+            android:layout_alignEnd="@+id/c_mobileno"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignRight="@+id/c_mobileno" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Time"
+            android:id="@+id/c_deliverytime"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignLeft="@+id/editText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 8:30 AM TO 7: 30 PM"
+            android:background="@drawable/bg_gradient"
+            android:textColor="@color/squarecamera__white"
+            android:id="@+id/textView2"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/c_deliverytime"
+            android:layout_alignStart="@+id/c_deliverytime"
+            android:layout_alignLeft="@+id/c_deliverytime" />
+
+        <TextView
+            android:id="@+id/c_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="32dp"
+            android:text="Only Avilabel For Rajkot City.."
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/c_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/c_method"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="Cash On Delivery"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/papertinkness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/c_delivery"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:padding="20dp">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/c_delivery"
+            android:layout_alignBottom="@+id/c_delivery"
+            android:layout_alignLeft="@+id/c_method"
+            android:layout_alignStart="@+id/c_method"
+            android:checked="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.srk.quickprint.Custom_Lib.CustomSquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <com.srk.quickprint.Custom_Lib.CustomSquareImageView
+        android:id="@+id/thumbnail_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_gradient"
+        android:padding="1dp" />
+
+</com.srk.quickprint.Custom_Lib.CustomSquareFrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorStar">#66a6ff</color>
+    <color name="colorMiddle">#6e79d2</color>
+    <color name="colorEnd">#764ba2</color>
+    <color name="colorShadow">#505050</color>
+    <color name="squarecamera__white">#ffffff</color>
+
+
+</resources>

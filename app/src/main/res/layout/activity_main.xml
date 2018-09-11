@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context="com.srk.quickprint.Activity.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_quick_print"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/btnCamera"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:onClick="btnClick"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/btnGallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/btn_camera"
+        tools:ignore="OnClick,RtlCompat" />
+
+    <ImageView
+        android:id="@+id/btnGallery"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMyPictures"
+        app:layout_constraintStart_toEndOf="@+id/btnCamera"
+        app:layout_constraintTop_toTopOf="@+id/btnCamera"
+        android:onClick="btnClick"
+        app:srcCompat="@drawable/btn_gallery"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/btnMyPictures"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        android:onClick="btnClick"
+        app:layout_constraintStart_toEndOf="@+id/btnGallery"
+        app:layout_constraintTop_toTopOf="@+id/btnGallery"
+        app:srcCompat="@drawable/btn_mypicture"
+        tools:ignore="OnClick,RtlCompat" />
+
+    <ImageView
+        android:id="@+id/btnRateus"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:onClick="btnClick"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera"
+        app:srcCompat="@drawable/btn_rateus"
+        tools:ignore="OnClick,RtlCompat" />
+
+    <ImageView
+        android:id="@+id/btnInfo"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="btnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRateus"
+        app:layout_constraintTop_toTopOf="@+id/btnRateus"
+        app:srcCompat="@drawable/btn_info"
+        tools:ignore="OnClick,RtlCompat" />
+
+    <TextView
+        android:id="@+id/aboutTerms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="8sp"
+        android:onClick="btnClick"
+        android:text="About Quick Print &amp; Terms and Conditions"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
